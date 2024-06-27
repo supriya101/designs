@@ -1,0 +1,18 @@
+.btnnn_shadow {
+    padding: 17px 19px;
+    border-radius: 5px;
+    transition: 0.3s all ease;
+    cursor: pointer;
+    color: #000;
+    transition: 0.5s;
+    font-weight: 600;
+  }
+  .btnnn_shadow {
+    background: linear-gradient(145deg, #e2e8ec, #ffffff);
+    color: #ff014f;
+  }
+  .btnnn_shadow:hover {
+    background: #ff014f;
+    color: white;
+    transform: translateY(-10px);
+  }

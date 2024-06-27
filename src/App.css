@@ -1,38 +1,227 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ecf0f3;
+}
+
+
+.container {
+  max-width: 92%;
+  margin: auto;
+}
+.d_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.f_flex {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.capitalize {
+  text-transform: capitalize;
+}
+
+button {
+  border: none;
+  outline: none;
+  background-color: none;
+}
+
+.btn_shadow {
+  padding: 18px 25px;
+  border-radius: 6px;
+  transition: 0.3s all ease;
+  cursor: pointer;
+  color: #000;
+  transition: 0.5s;
+}
+.btn_shadow {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+}
+.btn_shadow:hover {
+  background: #ff014f;
+  color: white;
+  transform: translateY(-10px);
+}
+.box_shodow {
+  background: linear-gradient(145deg, #e2e8ec, #ffffff);
+  box-shadow: 4px 4px 8px #cbcbcb, -4px -4px 8px #ffffff;
+  border-radius: 10px;
+}
+.row,
+.left,
+.right {
+  width: 50%;
+}
+.top {
+  margin-top: 30px;
+}
+.mtop {
+  margin-top: 40px;
+}
+.heading{
+  margin: 50px 0 50px 0;
+}
+.heading h4{
+  color: #ff014f;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.heading h1{
+  font-size:  50px;
+  color: #3c3e41;
+}
+h1 {
+  color: #3c3e41;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 35px;
+  width: 100%;
+}
+
+p {
+  color: #3c3e41;
+}
+.text-center {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+textarea,
+  input{
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+    outline: none;
+    border: 3px solid #e2e8ec;
+    margin-bottom: 20px;
   }
+
+.center {
+  width: 100%;
+}
+  
+.clr{
+  color: #ff014f;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.clr:hover{
+  color: #ffffff;
+}
+/*----------Footer---------*/
+footer {
+    background-color: #08071c;
+    padding: 100px 0 0 0;
+    color: #fff;
+    margin: 20px 0 0 0;
+}
+
+footer p {
+    color: #fff;
+    margin: 20px 0;
+}
+
+
+
+footer h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+footer li {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+footer li:before {
+  content: ".";
+  font-size: 50px;
+  vertical-align: top;
+  line-height: 10px;
+  margin-right: 20px;
+  color: #ff014f;
+}
+
+footer .box p{
+  margin: 0;
+  margin-top: 15px;
+}
+footer span {
+  color: #ff014f;
+  opacity: 1;
+}
+footer .icon{
+  margin-top: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+footer .icon i {
+  color: #ff014f;
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+}
+.legal {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid rgba(255, 255, 255, 0.5);
+  margin-top: 70px;
+  padding: 20px 0;
+}
+.btnnn_shadow{
+background: linear-gradient(145deg, #e2e8ec, #fff);
+    border-radius: 5px;
+    color: #000;
+    color: #ff014f;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 17px 19px;
+    transition: all .3s ease;
+    transition: .5s;
 }
 
-.App-link {
-  color: #61dafb;
+
+/*----------Footer---------*/
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .left,
+  .right {
+    width: 100%;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+ /* Large devices (laptops/desktops, 992px and up) */
+ @media only screen and (min-width: 320px) and (max-width: 480px) {
+    
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
   }
-  to {
-    transform: rotate(360deg);
+
+  .legal {
+    display: block;
   }
-}
+
+  .heading h1 {
+    font-size: 21px;
+  }
+
+    }

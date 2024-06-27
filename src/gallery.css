@@ -72,7 +72,6 @@
 }
 .nine {
     text-align:center; 
-    background-image: url('img/background1.png');
     font-size:50px; 
     text-transform:uppercase; 
     color:#222; 
@@ -80,13 +79,17 @@
     font-family:"Playfair Display", serif; 
     font-weight:400;
     padding: 20px;
+    margin-top: 25px;
+
   }
   .nine span {
     margin-top: 5px;
       font-size:18px; 
-      color:#8500beba; word-spacing:1px; font-weight:normal; letter-spacing:2px;
-      text-transform: uppercase; font-family:"Raleway", sans-serif; font-weight:600;
-  
+      color:#8500beba; word-spacing:1px; 
+      font-weight:normal; 
+      letter-spacing:2px;
+      text-transform: uppercase;
+      font-weight:600;
       display: grid;
       grid-template-columns: 1fr max-content 1fr;
       grid-template-rows: 27px 0;
@@ -107,3 +110,4 @@
   .twelve {
     font-family:"Raleway", sans-serif; font-weight:600;
   }
+  

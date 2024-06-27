@@ -3,6 +3,7 @@ import React, { useState, Suspense, lazy  } from 'react';
 import './gallery.css';
 import CloseIcon from '@material-ui/icons/Close';
 
+
 import Img1 from './img/Facebook1.png';
 import Img2 from './img/Facebook2.png';
 import Img3 from './img/Facebook3.png';
@@ -67,7 +68,7 @@ const Gallery = () => {
 
    
 
-
+    
 
     const facebookData = [
         { id: 1, imgSrc: Img1 },

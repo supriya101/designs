@@ -1,0 +1,108 @@
+.Contact {
+  background-image: url('img/background1.png');
+
+}
+
+.Contact .left {
+    width: 36%;
+  }
+  .Contact .right {
+    width: 60%;
+  }
+  .Contact .box {
+    padding: 30px;
+  }
+  .Contact .details h1 {
+    margin: 20px 0 20px 0;
+    font-size: 35px;
+  }
+  .Contact .details p {
+    font-size: 17px;
+  }
+
+  .Contact .details h4 {
+    color: #ff014f;
+  
+  }
+  
+  .Contact .details span {
+    color: #ff014f;
+    font-weight: 500;
+  }
+
+  .det {
+    color: #ff014f;
+    font-weight: 500;
+  }
+
+
+  .Contact .button {
+    margin-top: 20px;
+  }
+  .Contact button {
+    margin-right: 20px;
+  }
+  
+  .Contact .right {
+    padding: 35px;
+  }
+  .Contact .input span {
+    font-size: 13px;
+  }
+  .Contact input {
+    margin-top: 10px;
+  }
+  .Contact .right button {
+    width: 100%;
+    color: #ff014f;
+  }
+  .Contact .right button:hover {
+    color: white;
+  }
+  .Contact .right button i {
+    margin-left: 10px;
+  }
+
+  .imgal {
+    width: 70%;
+  }
+  .contactcenter{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    text-align: center;
+  }
+
+  
+ /* Mobile Devices */
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    
+    .contactcenter{
+    
+      width: auto;
+        }
+
+        .backg {
+          background-image: none !important;
+        }
+}
+ 
+ /* iPads, Tablets */
+ @media only screen and (min-width: 481px) and (max-width: 768px) {
+    
+  .Contact .d_flex {
+    flex-direction: column;
+  }
+  .Contact .left,
+  .Contact .right {
+    width: 100%;
+    margin-top: 50px;
+  }
+  
+  .contactcenter {
+    width: 95%;
+  }
+}
+
+
+ 
