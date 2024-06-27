@@ -16,7 +16,7 @@ const Header = () => {
         <div className='container d_flex'>
           
           <div className='logo'>
-            <img src={plogo} alt='' />
+          <a href='https://supriya101.github.io/portfolio/' target="_blank"><img src={plogo} alt='' /></a>
             
           </div>
 
