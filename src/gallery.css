@@ -76,16 +76,15 @@
     text-transform:uppercase; 
     color:#222; 
     letter-spacing:1px;
-    font-family:"Playfair Display", serif; 
-    font-weight:400;
     padding: 20px;
     margin-top: 25px;
 
   }
   .nine span {
     margin-top: 5px;
-      font-size:18px; 
-      color:#8500beba; word-spacing:1px; 
+      font-size:25px; 
+      color:#ff014f; 
+      word-spacing:1px; 
       font-weight:normal; 
       letter-spacing:2px;
       text-transform: uppercase;
@@ -100,8 +99,8 @@
   .nine span:after,.nine span:before {
       content: " ";
       display: block;
-      border-bottom: 1px solid #ccc;
-      border-top: 1px solid #ccc;
+      border-bottom: 1px solid #ff014d51;
+      border-top: 1px solid #ff014d51;
       height: 5px;
     background-color:#f8f8f8;
   }

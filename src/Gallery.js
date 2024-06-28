@@ -167,7 +167,7 @@ const Gallery = () => {
             </div>
 
             <div className="gallery-section">
-                <h2 style={{ textAlign: 'center', color:'#8500beba', textTransform:'uppercase', fontSize:'21px' }}>Magazine Covers </h2>
+                <h1 style={{ textAlign: 'center', textTransform:'uppercase', textDecoration:'underline'}}>Magazine <span style={{color: '#ff014f'}}> Covers </span> </h1>
                 <div className="gallery">
                     {magazineData.map((item, index) => (
                         <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
@@ -177,8 +177,12 @@ const Gallery = () => {
                 </div>
             </div>
 
+            <br />
+
             <div className="gallery-section">
-                <h2 style={{ textAlign: 'center', color:'#8500beba', textTransform:'uppercase', fontSize:'21px' }}>Facebook Posters</h2>
+                <h1 style={{ textAlign: 'center', textTransform:'uppercase', textDecoration:'underline'}}>Facebook <span style={{color: '#ff014f'}}>Posters </span></h1>
+                <br />
+
                 <div className="gallery">
                     {facebookData.map((item, index) => (
                         <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
@@ -188,9 +192,10 @@ const Gallery = () => {
                 </div>
             </div>
 
-          
+            <br />
             <div className="gallery-section">
-                <h2 style={{ textAlign: 'center', color:'#8500beba', textTransform:'uppercase', fontSize:'21px' }}>Website Slider Covers</h2>
+                <h1 style={{ textAlign: 'center', textTransform:'uppercase', textDecoration: 'underline'}}>Website Slider <span style={{color: '#ff014f'}}>  Covers </span></h1>
+                <br />
                 <div className="gallery">
                     {sliderData.map((item, index) => (
                         <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
@@ -199,9 +204,10 @@ const Gallery = () => {
                     ))}
                 </div>
             </div>
-
+            <br />
             <div className="gallery-section">
-                <h2 style={{ textAlign: 'center', color:'#8500beba', textTransform:'uppercase', fontSize:'21px' }}> Business Cards</h2>
+                <h1 style={{ textAlign: 'center', textTransform:'uppercase', textDecoration: 'underline'  }}> Business <span style={{color: '#ff014f'}}>Cards </span></h1>
+                <br />
                 <div className="gallery">
                     {businessData.map((item, index) => (
                         <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
@@ -210,9 +216,10 @@ const Gallery = () => {
                     ))}
                 </div>
             </div>
-
+            <br />
             <div className="gallery-section">
-                <h2 style={{ textAlign: 'center', color:'#8500beba', textTransform:'uppercase', fontSize:'21px' }}> Backdrop </h2>
+                <h1 style={{ textAlign: 'center', textTransform:'uppercase', textDecoration:'underline' }}> Back<span style={{color: '#ff014f'}}>drop</span></h1>
+                <br />
                 <div className="gallery">
                     {backdropData.map((item, index) => (
                         <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
@@ -222,9 +229,10 @@ const Gallery = () => {
                 </div>
             </div>
 
-
+            <br />
             <div className="gallery-section">
-                <h2 style={{ textAlign: 'center', color:'#8500beba', textTransform:'uppercase', fontSize:'21px' }}>Brochures</h2>
+                <h1 style={{ textAlign: 'center', textTransform:'uppercase', textDecoration:'underline'}}>Broch<span style={{color: '#ff014f'}}>ures </span></h1>
+                <br />
                 <div className="gallery">
                     {brochureData.map((item, index) => (
                         <div className="pics" key={index}>

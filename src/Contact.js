@@ -37,7 +37,8 @@ const Contact = () => {
       
         <div className='container top'>
           <div className='heading text-center'>
-            <h1>Let's Work Together - Contact Me</h1>
+            <br />
+            <h1 style={{textDecoration:'underline'}}>Let's Work Together - <span style={{color: '#ff014f'}}>Contact Me</span></h1>
           </div>
 
 
