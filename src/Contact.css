@@ -13,7 +13,7 @@
     padding: 30px;
   }
   .Contact .details h1 {
-    margin: 20px 0 20px 0;
+    margin: 0 0 20px 0;
     font-size: 35px;
   }
   .Contact .details p {
@@ -85,6 +85,8 @@
         .backg {
           background-image: none !important;
         }
+
+        
 }
  
  /* iPads, Tablets */
