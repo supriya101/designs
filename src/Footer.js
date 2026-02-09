@@ -140,7 +140,7 @@ const Footer = () => {
                     </div>
 
                     <div className='legal container'>
-                        <p>Copyright @2024. All rights reserved.</p>
+                        <p>Copyright @2026. All rights reserved.</p>
                         <label htmlFor=''>
                             Design & Developed by <span>Supriya Sudhir</span>
                         </label>
