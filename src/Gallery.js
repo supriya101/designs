@@ -346,8 +346,13 @@ const Gallery = () => {
                 <div className="gallery">
                     {fmcgPoster.map((item, index) => (
                         <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
-                            <img src={item.imgSrc} alt={`Gallery Image ${index + 1}`} style={{ width: '100%' }} />
-                        </div>
+<img
+  src={item.imgSrc}
+  alt={`Gallery Image ${index + 1}`}
+  loading="lazy"
+  onLoad={(e) => e.target.classList.add('loaded')}
+  style={{ width: '100%' }}
+/>                        </div>
                     ))}
                 </div>
             </div>
@@ -357,8 +362,13 @@ const Gallery = () => {
                 <div className="gallery">
                     {exibitionPoster.map((item, index) => (
                         <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
-                            <img src={item.imgSrc} alt={`Gallery Image ${index + 1}`} style={{ width: '100%' }} />
-                        </div>
+<img
+  src={item.imgSrc}
+  alt={`Gallery Image ${index + 1}`}
+  loading="lazy"
+  onLoad={(e) => e.target.classList.add('loaded')}
+  style={{ width: '100%' }}
+/>                        </div>
                     ))}
                 </div>
             </div>
@@ -369,8 +379,13 @@ const Gallery = () => {
                 <div className="gallery">
                     {emailSign.map((item, index) => (
                         <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
-                            <img src={item.imgSrc} alt={`Gallery Image ${index + 1}`} style={{ width: '100%' }} />
-                        </div>
+<img
+  src={item.imgSrc}
+  alt={`Gallery Image ${index + 1}`}
+  loading="lazy"
+  onLoad={(e) => e.target.classList.add('loaded')}
+  style={{ width: '100%' }}
+/>                        </div>
                     ))}
                 </div>
             </div>
@@ -405,8 +420,13 @@ const Gallery = () => {
                 <div className="gallery">
                     {mockupPoster.map((item, index) => (
                         <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
-                            <img src={item.imgSrc} alt={`Gallery Image ${index + 1}`} style={{ width: '100%' }} />
-                        </div>
+<img
+  src={item.imgSrc}
+  alt={`Gallery Image ${index + 1}`}
+  loading="lazy"
+  onLoad={(e) => e.target.classList.add('loaded')}
+  style={{ width: '100%' }}
+/>                        </div>
                     ))}
                 </div>
             </div>
@@ -417,8 +437,13 @@ const Gallery = () => {
                 <div className="gallery">
                     {occasionPoster.map((item, index) => (
                         <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
-                            <img src={item.imgSrc} alt={`Gallery Image ${index + 1}`} style={{ width: '100%' }} />
-                        </div>
+<img
+  src={item.imgSrc}
+  alt={`Gallery Image ${index + 1}`}
+  loading="lazy"
+  onLoad={(e) => e.target.classList.add('loaded')}
+  style={{ width: '100%' }}
+/>                        </div>
                     ))}
                 </div>
             </div>
@@ -429,8 +454,13 @@ const Gallery = () => {
                 <div className="gallery">
                     {magazineData.map((item, index) => (
                         <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
-                            <img src={item.imgSrc} alt={`Gallery Image ${index + 1}`} style={{ width: '100%' }} />
-                        </div>
+<img
+  src={item.imgSrc}
+  alt={`Gallery Image ${index + 1}`}
+  loading="lazy"
+  onLoad={(e) => e.target.classList.add('loaded')}
+  style={{ width: '100%' }}
+/>                        </div>
                     ))}
                 </div>
             </div>
@@ -444,8 +474,13 @@ const Gallery = () => {
                 <div className="gallery">
                     {facebookData.map((item, index) => (
                         <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
-                            <img src={item.imgSrc} alt={`Gallery Image ${index + 1}`} style={{ width: '100%' }} />
-                        </div>
+<img
+  src={item.imgSrc}
+  alt={`Gallery Image ${index + 1}`}
+  loading="lazy"
+  onLoad={(e) => e.target.classList.add('loaded')}
+  style={{ width: '100%' }}
+/>                        </div>
                     ))}
                 </div>
             </div>
@@ -457,8 +492,13 @@ const Gallery = () => {
                 <div className="gallery">
                     {sliderData.map((item, index) => (
                         <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
-                            <img src={item.imgSrc} alt={`Gallery Image ${index + 1}`} style={{ width: '100%' }} />
-                        </div>
+<img
+  src={item.imgSrc}
+  alt={`Gallery Image ${index + 1}`}
+  loading="lazy"
+  onLoad={(e) => e.target.classList.add('loaded')}
+  style={{ width: '100%' }}
+/>                        </div>
                     ))}
                 </div>
             </div>
@@ -469,8 +509,13 @@ const Gallery = () => {
                 <div className="gallery">
                     {businessData.map((item, index) => (
                         <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
-                            <img src={item.imgSrc} alt={`Gallery Image ${index + 1}`} style={{ width: '100%' }} />
-                        </div>
+<img
+  src={item.imgSrc}
+  alt={`Gallery Image ${index + 1}`}
+  loading="lazy"
+  onLoad={(e) => e.target.classList.add('loaded')}
+  style={{ width: '100%' }}
+/>                        </div>
                     ))}
                 </div>
             </div>
@@ -481,8 +526,13 @@ const Gallery = () => {
                 <div className="gallery">
                     {backdropData.map((item, index) => (
                         <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
-                            <img src={item.imgSrc} alt={`Gallery Image ${index + 1}`} style={{ width: '100%' }} />
-                        </div>
+<img
+  src={item.imgSrc}
+  alt={`Gallery Image ${index + 1}`}
+  loading="lazy"
+  onLoad={(e) => e.target.classList.add('loaded')}
+  style={{ width: '100%' }}
+/>                        </div>
                     ))}
                 </div>
             </div>

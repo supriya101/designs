@@ -1,16 +1,14 @@
-
-
+/* ================= MODAL ================= */
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 999;
     padding-top: 60px;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     overflow: auto;
-    background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.9);
 }
 
@@ -25,12 +23,19 @@
     max-width: 700px;
 }
 
+/* Mobile modal fix */
+@media (max-width: 768px) {
+    .modal img {
+        width: 95%;
+    }
+}
+
 .modal-close {
     position: absolute;
     top: 15px;
-    right: 35px;
+    right: 20px;
     color: white;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: bold;
     transition: 0.3s;
 }
@@ -38,75 +43,120 @@
 .modal-close:hover,
 .modal-close:focus {
     color: #bbb;
-    text-decoration: none;
     cursor: pointer;
 }
 
+/* ================= GALLERY ================= */
 .gallery {
     background-image: url('img/background1.png');
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 16px;
     padding: 16px;
 }
 
+/* ================= IMAGE CARD ================= */
 .pics {
     position: relative;
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 10px 10px 20px #a600f030, -10px -10px 20px rgb(152 39 157 / 13%);
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    touch-action: manipulation;
 }
 
+/* ✅ FULL IMAGE (NO CROP) */
 .pics img {
     width: 100%;
-    height: auto;
+    height: auto; /* 🔥 keeps original ratio */
     display: block;
+
+    /* smooth loading */
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
 }
 
-.pics:hover {
-    transform: scale(1.05);
-    opacity: .8;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-
+.pics img.loaded {
+    opacity: 1;
 }
+
+/* Hover effect (desktop only) */
+@media (hover: hover) {
+    .pics:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr); /* 2 per row */
+        gap: 10px;
+        padding: 10px;
+    }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+        padding: 8px;
+    }
+}
+
+/* ================= HEADINGS ================= */
 .nine {
-    text-align:center; 
-    font-size:50px; 
-    text-transform:uppercase; 
-    color:#222; 
-    letter-spacing:1px;
+    text-align: center;
+    font-size: 50px;
+    text-transform: uppercase;
+    color: #222;
+    letter-spacing: 1px;
     padding: 20px;
     margin-top: 25px;
+}
 
-  }
-  .nine span {
+.nine span {
     margin-top: 5px;
-      font-size:25px; 
-      color:#ff014f; 
-      word-spacing:1px; 
-      font-weight:normal; 
-      letter-spacing:2px;
-      text-transform: uppercase;
-      font-weight:600;
-      display: grid;
-      grid-template-columns: 1fr max-content 1fr;
-      grid-template-rows: 27px 0;
-      grid-gap: 20px;
-      align-items: center;
-  }
-  
-  .nine span:after,.nine span:before {
-      content: " ";
-      display: block;
-      border-bottom: 1px solid #ff014d51;
-      border-top: 1px solid #ff014d51;
-      height: 5px;
-    background-color:#f8f8f8;
-  }
-  
+    font-size: 25px;
+    color: #ff014f;
+    word-spacing: 1px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-template-rows: 27px 0;
+    grid-gap: 20px;
+    align-items: center;
+}
 
-  .twelve {
-    font-family:"Raleway", sans-serif; font-weight:600;
-  }
-  
+.nine span:after,
+.nine span:before {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid #ff014d51;
+    border-top: 1px solid #ff014d51;
+    height: 5px;
+    background-color: #f8f8f8;
+}
+
+/* Smaller headings on mobile */
+@media (max-width: 768px) {
+    .nine {
+        font-size: 28px;
+    }
+
+    .nine span {
+        font-size: 16px;
+    }
+}
+
+/* ================= FONT ================= */
+.twelve {
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+}
