@@ -38,7 +38,7 @@ const Footer = () => {
         <div className='container grid'>
             <div className='box'>
             <img src={plogo} alt='' />
-            <p>Experienced Freelancer with expertise in UI design, SEO, Digital Marketing, and Lead Generation. With over 4 years of experience, I create visually appealing websites, implement SEO strategies, and maximize brand visibility using social media. I aim to provide high-quality solutions for clients.</p>
+            <p>Experienced Freelancer with expertise in UI design, SEO, Digital Marketing, and Lead Generation. With over 6 years of experience, I create visually appealing websites, implement SEO strategies, and maximize brand visibility using social media. I aim to provide high-quality solutions for clients.</p>
                <br />
                 <div>
                 <a href='https://www.facebook.com/supriyasudir5' target='_blank'>
@@ -119,7 +119,7 @@ const Footer = () => {
 
                     <div className='box'>
                         <h2>Get in Touch</h2>
-                        <p>If you are seeking a Website Designer, SEO Specialist, Digital Marketing Executive, or Freelancer, I am confident in my ability to meet and exceed your expectations. </p>
+                        <p>If you are seeking a Website Designer, SEO Specialist, Digital Marketer, or Freelancer, I am confident in my ability to meet and exceed your expectations. </p>
 
                     
                     <div className='icon'>
