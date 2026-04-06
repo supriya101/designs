@@ -543,13 +543,18 @@ const Gallery = () => {
                 <br />
                 <div className="gallery">
                     {brochureData.map((item, index) => (
-                        <div className="pics" key={index}>
-                            <a href={item.pdfSrc} target="_blank" rel="noopener noreferrer">
-                                <img src={item.imgSrc} alt={`Brochure ${index + 1}`} style={{ width: '100%' }} />
-                                
-                            </a>
-                        </div>
-                    ))}
+    <div className="pics" key={index}>
+        <a href={item.pdfSrc} target="_blank" rel="noopener noreferrer">
+            <img
+                src={item.imgSrc}
+                alt={`Brochure ${index + 1}`}
+                loading="lazy"
+                onLoad={(e) => e.target.classList.add('loaded')}   // ✅ THIS FIX
+                style={{ width: '100%' }}
+            />
+        </a>
+    </div>
+))}
                 </div>
             </div>
         </>
